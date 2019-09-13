@@ -27,9 +27,6 @@ body {
 .transform(translateZ(0)); // prevent flashing
 }
 
-.feck {
-    Margin-left= 43px;
-}
 
 .periodic {
     position: relative;
@@ -49,6 +46,10 @@ body {
     width: 5.55%;
     height: 100%;
 }
+.cell:hover {
+    float: left;
+    position: relative;
+}
 
 .element {
     position: absolute;
@@ -66,13 +67,33 @@ body {
 
     background-color: aqua;;
 }
+.element:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1px;
+    right: 1px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(255,255,255,0.5);
+    border: 1px solid rgba(0,0,0,0.05);
+    text-align: center;
+    cursor: default;
+    pointer-events: none;
+.transition(all 200ms ease);
 
+    background-color: white;;
+}
+.blue {
+    background-color: lime;
+}
 .cell:hover .element {
     border-color: rgba(0,0,0,0.1);
+    background-color: white;
+
 .transform(scale(3,3));
     z-index: 1;
 
-    background-color: aqua;
+    background-color: white;
 }
 
 .at_num,
